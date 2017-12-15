@@ -1,0 +1,19 @@
+.jumbotron {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#ficha {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 6px;
+    margin-right: 9px;
+}
+
+.col-lg-12 {
+    padding-right: 10px;
+    padding-left: 19px;
+}
