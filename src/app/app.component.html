@@ -34,5 +34,5 @@
     <strong>Información!</strong> El juego ha comenzado!
   </div>
   <app-cronometro [tiempoMinutos]="nivelSeleccionado ? nivelSeleccionado.tiempoMinutos : null" [juegoIniciado]="juegoIniciado"></app-cronometro>
-  <app-tablero *ngIf="juegoIniciado"></app-tablero>
+  <app-tablero [cantidadFichas]="nivelSeleccionado ? nivelSeleccionado.cantidadFichas : null" *ngIf="juegoIniciado" ></app-tablero>
 <div>
