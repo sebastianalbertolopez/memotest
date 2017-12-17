@@ -52,6 +52,7 @@ export class CronometroComponent implements OnInit {
       this.timer = null;
     }
     this.tiempoRestante = new Date(0, 0, 0, 0, 0, 0, 0);
+    this._juegoIniciado = false;
   }
 
 }
