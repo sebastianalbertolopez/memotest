@@ -1,0 +1,31 @@
+#ficha {
+    color: #FFF;
+    position:relative;
+    top: calc(50% - 25px);
+}
+
+.tarjeta {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    margin-right: 9px;
+    text-align: center;
+    margin-top: 9px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.tarjeta.flipped {
+    transform: rotateY( 180deg );
+    background-color: #008744;
+}
+
+.back {
+    transform: rotateY( 0deg );
+    background-color: rgba(11, 77, 211, 0.664);
+}
+
+.front {
+    transform: rotateY( 180deg );
+    background-color: #008744;
+}

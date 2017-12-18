@@ -10,21 +10,7 @@ export class TarjetaService {
 
     constructor() {}
 
-    mezclar(arr: any[]) {
-        const newArr = arr.slice();
-        for (let i = newArr.length; i; i -= 1) {
-            const j = Math.floor(Math.random() * i);
-            const x = newArr[i - 1];
-            newArr[i - 1] = newArr[j];
-            newArr[j] = x;
-        }
-        return newArr;
-    }
-
     mostrarTarjeta(tarjeta: ITarjeta) {
-        if (tarjeta.visible) {
-            return;
-        }
         if (this.isEmpty(this.primerTarjetaAComparar) && this.isEmpty(this.segundaTarjetaAComparar)) {
             this.primerTarjetaAComparar = tarjeta;
             this.primerTarjetaAComparar.visible = true;
@@ -35,10 +21,6 @@ export class TarjetaService {
             this.segundaTarjetaAComparar.visible = true;
             this.comparar(this.primerTarjetaAComparar, this.segundaTarjetaAComparar);
         }
-    }
-
-    isEmpty(obj: any) {
-        return obj === null || obj === undefined;
     }
 
     comparar(tarjeta1, tarjeta2) {
@@ -52,6 +34,14 @@ export class TarjetaService {
                 tarjeta2.visible = false;
             }, 1000);
         }
+    }
+
+    isEmpty(obj: any) {
+        return obj === null || obj === undefined;
+    }
+
+    isUndefined(obj: object) {
+        return obj === undefined;
     }
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { ITarjeta } from '../interface/ITarjeta';
-import { TarjetaService } from '../servicios/tarjeta.service';
+import { TableroService } from '../servicios/tablero.service';
 
 @Component({
   selector: 'app-tablero',
@@ -26,16 +26,13 @@ export class TableroComponent implements OnInit {
   @Input()
   set cantidadFichas(cantidadFichas) {
     this._cantidadFichas = cantidadFichas;
-    // this.tarjetasSeleccionadas = TARJETAS.slice(0, this._cantidadFichas);
-    // this.tarjetasSeleccionadas = getTarjetas(this.tarjetasSeleccionadas);
-    // this.tarjetasSeleccionadas = this.actions.mezclar(this.tarjetasSeleccionadas);
+    this.tarjetasSeleccionadas = this.actions.getTarjetas(this._cantidadFichas);
   }
   _cantidadFichas: number;
 
   tarjetasSeleccionadas: Array<ITarjeta>;
 
-
-  constructor(private actions: TarjetaService) { }
+  constructor(private actions: TableroService) { }
 
   ngOnInit() {
   }

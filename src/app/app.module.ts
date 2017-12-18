@@ -9,20 +9,26 @@ import { FormsModule } from '@angular/forms';
 import { TableroComponent } from './tablero/tablero.component';
 
 import { TarjetaService } from './servicios/tarjeta.service';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
+import { TableroService } from './servicios/tablero.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CronometroComponent,
-    TableroComponent
+    TableroComponent,
+    TarjetaComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [TarjetaService],
+  providers: [
+    TarjetaService,
+    TableroService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
