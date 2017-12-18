@@ -13,6 +13,7 @@
     margin-top: 9px;
     transition: transform 1s;
     transform-style: preserve-3d;
+    background-color: rgba(11, 77, 211, 0.664);
 }
 
 .tarjeta.flipped {
@@ -22,10 +23,8 @@
 
 .back {
     transform: rotateY( 0deg );
-    background-color: rgba(11, 77, 211, 0.664);
 }
 
 .front {
     transform: rotateY( 180deg );
-    background-color: #008744;
 }
