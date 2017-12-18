@@ -8,6 +8,8 @@ import { CronometroComponent } from './cronometro/cronometro.component';
 import { FormsModule } from '@angular/forms';
 import { TableroComponent } from './tablero/tablero.component';
 
+import { MemoTestService } from './servicios/memotest.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { TableroComponent } from './tablero/tablero.component';
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [MemoTestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

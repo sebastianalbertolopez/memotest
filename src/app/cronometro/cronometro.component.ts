@@ -30,6 +30,9 @@ export class CronometroComponent implements OnInit {
   }
   _juegoIniciado: boolean;
 
+  @Output()
+  tiempoTerminado = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit() {
@@ -52,7 +55,7 @@ export class CronometroComponent implements OnInit {
       this.timer = null;
     }
     this.tiempoRestante = new Date(0, 0, 0, 0, 0, 0, 0);
-    this._juegoIniciado = false;
+    this.tiempoTerminado.emit();
   }
 
 }

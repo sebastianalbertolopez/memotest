@@ -14,25 +14,25 @@ export class AppComponent implements OnInit {
     {
       id: 0,
       nombre: 'Facil',
-      tiempoMinutos: 1,
+      tiempoMinutos: 2,
       cantidadFichas: 10
     },
     {
       id: 1,
       nombre: 'Medio',
-      tiempoMinutos: 2,
+      tiempoMinutos: 3,
       cantidadFichas: 15
     },
     {
       id: 2,
       nombre: 'Difícil',
-      tiempoMinutos: 3,
+      tiempoMinutos: 4,
       cantidadFichas: 20
     },
     {
       id: 3,
       nombre: 'Extremo',
-      tiempoMinutos: 4,
+      tiempoMinutos: 5,
       cantidadFichas: 25
     }
   ];
@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
     this.mostrarAlerta = true;
     setTimeout(function() {
       this.mostrarAlerta = false;
-    }.bind(this), 3000);
+    }.bind(this), 2000);
   }
 
   detener() {
