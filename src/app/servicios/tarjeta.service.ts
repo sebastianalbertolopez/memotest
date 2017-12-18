@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { ITarjeta } from '../interface/ITarjeta';
 
 @Injectable()
-export class MemoTestService {
+export class TarjetaService {
 
     private primerTarjetaAComparar: ITarjeta;
     private segundaTarjetaAComparar: ITarjeta;
