@@ -14,25 +14,25 @@ export class AppComponent implements OnInit {
     {
       id: 0,
       nombre: 'Facil',
-      tiempoMinutos: 3,
+      tiempoMinutos: 1,
       cantidadFichas: 10
     },
     {
       id: 1,
       nombre: 'Medio',
-      tiempoMinutos: 6,
+      tiempoMinutos: 2,
       cantidadFichas: 15
     },
     {
       id: 2,
       nombre: 'Difícil',
-      tiempoMinutos: 9,
+      tiempoMinutos: 3,
       cantidadFichas: 20
     },
     {
       id: 3,
       nombre: 'Extremo',
-      tiempoMinutos: 12,
+      tiempoMinutos: 4,
       cantidadFichas: 25
     }
   ];
